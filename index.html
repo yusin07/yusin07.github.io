@@ -1,314 +1,253 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link href="./style.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <div
-      class="absolute top-0 w-full h-screen bg-[url('assets/top.png')] bg-cover"
-    ></div>
-    <nav class="sticky top-0 h-16 w-full nav-bg z-20">
-      <div
-        class="flex justify-around items-center ml-auto mr-auto w-full h-full max-w-[1296px]"
-      >
-        <img
-          alt="logo"
-          class="ml-8 mr-2 rounded-full h-9 w-9"
-          src="./assets/logo.png"
-        />
-        <span class="mr-auto font-bold text-lg text-light">YU SIN, HSU</span>
-        <menu class="flex shrink-0 mr-8 text-semi-light">
-          <li class="mr-10">Portfolio</li>
-          <li class="mr-10">Experience</li>
-          <li>Contact</li>
-        </menu>
-      </div>
-    </nav>
-    <div class="relative w-full pb-24">
-      <div class="ml-auto mr-auto mt-[72px] max-w-[1296px]">
-        <header class="flex justify-around items-center">
-          <div class="shrink-0 p-8">
-            <h1 class="text-6xl font-bold leading-tight">
-              Hi, I’m Yu Sin<br />
-              An <span class="text-[#00D970]">UI/UX Designer!</span>
-            </h1>
-            <p class="mt-4 text-light text-lg font-normal leading-8">
-              I attache great importance to aesthetics and details in my
-              design<br />
-              project. Very willing to accept new knowledge and challenges.
-            </p>
-            <div class="mt-12">
-              <a
-                href="#"
-                class="inline-block mr-2 rounded-lg bg-[#00D970] px-6 py-3 text-white font-medium"
-              >
-                Download CV
-              </a>
-              <a
-                href="#"
-                class="inline-block rounded-lg border border-black px-6 py-3 text-semi-light font-medium"
-              >
-                Hire Me
-              </a>
-            </div>
-          </div>
-          <img class="shrink min-w-0 max-w-[588px]" src="assets/personal.png" />
-        </header>
-        <section>
-          <h2 class="ml-20 text-3xl italic font-bold">I'm capable of....</h2>
-          <ul class="flex justify-evenly mt-8">
-            <li class="text-center w-80">
-              <img class="ml-auto mr-auto" src="assets/webmobile.png" />
-              <h3 class="font-medium text-2xl leading-9 text-semi-light">
-                Mobile/Web Design
-              </h3>
-              <p class="text-center text-light leading-loose">
-                Design user interfaces based on requirements and guildline while
-                maintaining aesthetics and usability.
-              </p>
-            </li>
-            <li class="text-center w-80">
-              <img class="ml-auto mr-auto" src="assets/interaction.png" />
-              <h3 class="font-medium text-2xl leading-9 text-semi-light">
-                Interaction Design
-              </h3>
-              <p class="text-center text-light leading-loose">
-                Great interaction design reduces the learning curve and results
-                in a great experience while using interface.
-              </p>
-            </li>
-            <li class="text-center w-80">
-              <img class="ml-auto mr-auto" src="assets/userexp.png" />
-              <h3 class="font-medium text-2xl leading-9 text-semi-light">
-                User Experience
-              </h3>
-              <p class="text-center text-light leading-loose">
-                By analysing users behavior to discover user needs and validate
-                these ideas through prototype testing.
-              </p>
-            </li>
-          </ul>
-        </section>
-      </div>
-    </div>
-    <section class="relative pt-16 bg-white">
-      <div class="mx-auto p-16 max-w-[1296px]">
-        <h2 class="mb-12 font-bold text-5xl text-semi-light">Portfolio</h2>
-        <div class="relative mb-6">
-          <div class="absolute p-8 w-full h-full">
-            <h3
-              class="font-bold text-5xl text-white"
-              style="text-shadow: 0px 2px 24px rgba(0, 0, 0, 0.16)"
-            >
-              ZK Website Redesign
-            </h3>
-            <p
-              class="leading-7 text-[#F2F2F2] pt-2 pb-4"
-              style="text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.24)"
-            >
-              After ten years of use, the website is no longer in line with<br />modern
-              trends and it is time for a renovation.
-            </p>
-            <a
-              href="#"
-              class="inline-block mt-2 rounded-lg bg-[#00D970] px-6 py-3 text-white font-medium"
-            >
-              Learn More
-            </a>
-          </div>
-          <img
-            class="rounded-2xl border border-[#EBEBEB]"
-            height="480px"
-            src="assets/portfolio/zkframework.png"
-          />
-        </div>
-        <div class="grid grid-cols-2 grid-rows-1 gap-6 mb-6">
-          <div
-            class="relative rounded-2xl col-span-1 border border-[#EBEBEB] bg-cover bg-[url('assets/portfolio/zkcomponent.png')]"
-          >
-            <div
-              class="absolute rounded-2xl flex justify-between items-center w-full h-24 bottom-0"
-              style="
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet" />
+	<link href="./style.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="absolute top-0 w-full h-screen bg-[url('assets/top.png')] bg-cover"></div>
+	<nav class="sticky top-0 h-16 w-full nav-bg z-20">
+		<div class="flex justify-around items-center ml-auto mr-auto w-full h-full max-w-[1296px]">
+			<img alt="logo" class="ml-8 mr-2 rounded-full h-9 w-9" src="./assets/logo.png" />
+			<span class="mr-auto font-bold text-lg text-light">YU SIN, HSU</span>
+			<menu class="flex shrink-0 mr-8 text-semi-light">
+				<li class="mr-10">Portfolio</li>
+				<li class="mr-10">Experience</li>
+				<li>Contact</li>
+			</menu>
+		</div>
+	</nav>
+	<div class="relative w-full pb-24">
+		<div class="ml-auto mr-auto mt-[72px] max-w-[1296px]">
+			<header class="flex justify-around items-center">
+				<div class="shrink-0 p-8">
+					<h1 class="text-6xl font-bold leading-tight">
+						Hi, I’m Yu Sin<br />
+						An <span class="text-[#00D970]">UI/UX Designer!</span>
+					</h1>
+					<p class="mt-4 text-light text-lg font-normal leading-8">
+						I attache great importance to aesthetics and details in my
+						design<br />
+						project. Very willing to accept new knowledge and challenges.
+					</p>
+					<div class="mt-12">
+						<a href="#" class="inline-block mr-2 rounded-lg bg-[#00D970] px-6 py-3 text-white font-medium">
+							Download CV
+						</a>
+						<a href="#"
+							class="inline-block rounded-lg border border-black px-6 py-3 text-semi-light font-medium">
+							Hire Me
+						</a>
+					</div>
+				</div>
+				<img class="shrink min-w-0 max-w-[588px]" src="assets/personal.png" />
+			</header>
+			<section>
+				<h2 class="ml-20 text-3xl italic font-bold">I'm capable of....</h2>
+				<ul class="flex justify-evenly mt-8">
+					<li class="text-center w-80">
+						<img class="ml-auto mr-auto" src="assets/webmobile.png" />
+						<h3 class="font-medium text-2xl leading-9 text-semi-light">
+							Mobile/Web Design
+						</h3>
+						<p class="text-center text-light leading-loose">
+							Design user interfaces based on requirements and guildline while
+							maintaining aesthetics and usability.
+						</p>
+					</li>
+					<li class="text-center w-80">
+						<img class="ml-auto mr-auto" src="assets/interaction.png" />
+						<h3 class="font-medium text-2xl leading-9 text-semi-light">
+							Interaction Design
+						</h3>
+						<p class="text-center text-light leading-loose">
+							Great interaction design reduces the learning curve and results
+							in a great experience while using interface.
+						</p>
+					</li>
+					<li class="text-center w-80">
+						<img class="ml-auto mr-auto" src="assets/userexp.png" />
+						<h3 class="font-medium text-2xl leading-9 text-semi-light">
+							User Experience
+						</h3>
+						<p class="text-center text-light leading-loose">
+							By analysing users behavior to discover user needs and validate
+							these ideas through prototype testing.
+						</p>
+					</li>
+				</ul>
+			</section>
+		</div>
+	</div>
+	<section class="relative pt-16 bg-white">
+		<div class="mx-auto p-16 max-w-[1296px]">
+			<h2 class="mb-12 font-bold text-5xl text-semi-light">Portfolio</h2>
+			<div class="relative mb-6">
+				<div class="absolute p-8 w-full h-full">
+					<h3 class="font-bold text-5xl text-white" style="text-shadow: 0px 2px 24px rgba(0, 0, 0, 0.16)">
+						ZK Website Redesign
+					</h3>
+					<p class="leading-7 text-[#F2F2F2] pt-2 pb-4" style="text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.24)">
+						After ten years of use, the website is no longer in line with<br />modern
+						trends and it is time for a renovation.
+					</p>
+					<a href="#" class="inline-block mt-2 rounded-lg bg-[#00D970] px-6 py-3 text-white font-medium">
+						Learn More
+					</a>
+				</div>
+				<img class="rounded-2xl border border-[#EBEBEB]" height="480px"
+					src="assets/portfolio/zkframework.png" />
+			</div>
+			<div class="grid grid-cols-2 grid-rows-1 gap-6 mb-6">
+				<div
+					class="relative rounded-2xl col-span-1 border border-[#EBEBEB] bg-cover bg-[url('assets/portfolio/zkcomponent.png')]">
+					<div class="absolute rounded-2xl flex justify-between items-center w-full h-24 bottom-0" style="
                 background: linear-gradient(
                   180deg,
                   rgba(0, 147, 249, 0) 0%,
                   rgba(0, 147, 249, 0.65) 100%
                 );
-              "
-            >
-              <h3
-                class="ml-8 font-bold text-white text-2xl"
-                style="text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.24)"
-              >
-                ZK Component Guide
-              </h3>
-              <a
-                href="#"
-                class="mr-8 inline-block mt-2 rounded-lg bg-[#FFA516] px-6 py-3 text-white font-medium"
-              >
-                Learn More
-              </a>
-            </div>
-          </div>
-          <div class="flex flex-col">
-            <img class="rounded-lg" src="assets/banner/Banner1.png" />
-            <div class="my-4 flex justify-center items-center">
-              <hr class="grow" />
-              <span class="mx-4 font-medium" style="color: rgba(0, 0, 0, 0.48)">
-                ZK Banners
-              </span>
-              <hr class="grow" />
-            </div>
-            <div
-              class="grow rounded-2xl p-8"
-              style="box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08)"
-            >
-              <h3 class="text-2xl font-bold text-[#00A2CF]">
-                What is ZK Framework?
-              </h3>
-              <p class="mt-4 text-light leading-8">
-                ZK is an open-source Ajax Web application framework, written in
-                Java, that enables creation of graphical user interfaces for Web
-                applications with little required programming knowledge.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="grid grid-cols-12 grid-rows-1 gap-[24px]">
-          <div class="col-span-5">
-            <img
-              class="rounded-2xl border border-[#EBEBEB]"
-              src="assets/portfolio/quire.png"
-            />
-            <div
-              class="grow mt-6 rounded-2xl p-8"
-              style="box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08)"
-            >
-              <h3 class="text-2xl font-bold text-[#07BF5A]">What is Quire?</h3>
-              <p class="mt-4 text-light leading-8">
-                Quire is a new-generation task management and collaboration SaaS
-                tool.
-              </p>
-            </div>
-          </div>
-          <div
-            class="relative col-span-7 rounded-2xl border border-[#EBEBEB] bg-cover bg-[url('assets/portfolio/quirelandingpage.png')]"
-          >
-            <div
-              class="absolute rounded-2xl flex justify-between items-center w-full h-24 bottom-0"
-              style="
+              ">
+						<h3 class="ml-8 font-bold text-white text-2xl"
+							style="text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.24)">
+							ZK Component Guide
+						</h3>
+						<a href="#"
+							class="mr-8 inline-block mt-2 rounded-lg bg-[#FFA516] px-6 py-3 text-white font-medium">
+							Learn More
+						</a>
+					</div>
+				</div>
+				<div class="flex flex-col">
+					<img class="rounded-lg" src="assets/banner/Banner1.png" />
+					<div class="my-4 flex justify-center items-center">
+						<hr class="grow" />
+						<span class="mx-4 font-medium" style="color: rgba(0, 0, 0, 0.48)">
+							ZK Banners
+						</span>
+						<hr class="grow" />
+					</div>
+					<div class="grow rounded-2xl p-8" style="box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08)">
+						<h3 class="text-2xl font-bold text-[#00A2CF]">
+							What is ZK Framework?
+						</h3>
+						<p class="mt-4 text-light leading-8">
+							ZK is an open-source Ajax Web application framework, written in
+							Java, that enables creation of graphical user interfaces for Web
+							applications with little required programming knowledge.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="grid grid-cols-12 grid-rows-1 gap-[24px]">
+				<div class="col-span-5">
+					<img class="rounded-2xl border border-[#EBEBEB]" src="assets/portfolio/quire.png" />
+					<div class="grow mt-6 rounded-2xl p-8" style="box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08)">
+						<h3 class="text-2xl font-bold text-[#07BF5A]">What is Quire?</h3>
+						<p class="mt-4 text-light leading-8">
+							Quire is a new-generation task management and collaboration SaaS
+							tool.
+						</p>
+					</div>
+				</div>
+				<div
+					class="relative col-span-7 rounded-2xl border border-[#EBEBEB] bg-cover bg-[url('assets/portfolio/quirelandingpage.png')]">
+					<div class="absolute rounded-2xl flex justify-between items-center w-full h-24 bottom-0" style="
                 background: linear-gradient(
                   180deg,
                   #000000 -0.52%,
                   rgba(0, 0, 0, 0) -0.51%,
                   rgba(0, 0, 0, 0.5) 100%
                 );
-              "
-            >
-              <h3
-                class="ml-8 font-bold text-white text-2xl"
-                style="text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.24)"
-              >
-                ZK Component Guide
-              </h3>
-              <a
-                href="#"
-                class="mr-8 inline-block mt-2 rounded-lg bg-[#07B856] px-6 py-3 text-white font-medium"
-              >
-                Learn More
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="my-4 flex justify-center items-center">
-          <hr class="grow" />
-          <span class="mx-4 font-medium" style="color: rgba(0, 0, 0, 0.48)">
-            SIDE PROJECTS
-          </span>
-          <hr class="grow" />
-        </div>
-        <div class="grid grid-cols-3 grid-rows-2 gap-x-6 gap-y-8">
-          <div>
-            <img class="rounded-2xl" src="assets/portfolio/enduro.png" />
-            <h3 class="mt-4 text-xl font-bold">Endurosense</h3>
-            <p class="mt-2 text-light leading-7">
-              The smart battery management app. Take control of your energy
-              efficiency with Endurosense.
-            </p>
-            <div
-              class="mt-2 text-lg font-medium"
-              style="color: rgba(0, 0, 0, 0.48)"
-            >
-              Private
-            </div>
-          </div>
-          <div>
-            <img
-              class="rounded-2xl"
-              src="assets/portfolio/honorgamingcenter.png"
-            />
-            <h3 class="mt-4 text-xl font-bold">Honor Gaming Center Icon</h3>
-            <p class="mt-2 text-light leading-7">
-              Honor Gaming Center is a software portal that displays real-time
-              performance and settings information for connected devices.
-            </p>
-            <div class="mt-2 text-lg font-medium text-[#00D970]">Public</div>
-          </div>
-          <div>
-            <img class="rounded-2xl" src="assets/portfolio/booking.png" />
-            <h3 class="mt-4 text-xl font-bold">Deskbooking System</h3>
-            <p class="mt-2 text-light leading-7">
-              The Deskbooking Floor Plan provides flexible workspaces, desks,
-              and meeting room solution for your schedule.
-            </p>
-            <div
-              class="mt-2 text-lg font-medium"
-              style="color: rgba(0, 0, 0, 0.48)"
-            >
-              Private
-            </div>
-          </div>
-          <div>
-            <img class="rounded-2xl" src="assets/portfolio/foodpanda.png" />
-            <h3 class="mt-4 text-xl font-bold">Foodpanda Web Redesign</h3>
-            <p class="mt-2 text-light leading-7">
-              Trying new style and redsign the icons on foodpanda’s landing
-              page.
-            </p>
-          </div>
-          <div>
-            <img class="rounded-2xl" src="assets/portfolio/pinxer.png" />
-            <h3 class="mt-4 text-xl font-bold">Pinxer Concept</h3>
-            <p class="mt-2 text-light leading-7">
-              Pinxer is a hardware and software integration system.It’s a new
-              ways of interacting with photos.
-            </p>
-          </div>
-          <div>
-            <img class="rounded-2xl" src="assets/portfolio/packcul.png" />
-            <h3 class="mt-4 text-xl font-bold">Parkcul Concept</h3>
-            <p class="mt-2 text-light leading-7">
-              Parkcul is an App that designed for drivers who need to search the
-              parking space.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="relative bg-[url('assets/bottom.png')]">
-      <div class="mx-auto p-16 max-w-[1296px]">
-        <div
-          class="w-full p-8 rounded-2xl"
-          style="
+              ">
+						<h3 class="ml-8 font-bold text-white text-2xl"
+							style="text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.24)">
+							ZK Component Guide
+						</h3>
+						<a href="#"
+							class="mr-8 inline-block mt-2 rounded-lg bg-[#07B856] px-6 py-3 text-white font-medium">
+							Learn More
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="my-4 flex justify-center items-center">
+				<hr class="grow" />
+				<span class="mx-4 font-medium" style="color: rgba(0, 0, 0, 0.48)">
+					SIDE PROJECTS
+				</span>
+				<hr class="grow" />
+			</div>
+			<div class="grid grid-cols-3 grid-rows-2 gap-x-6 gap-y-8">
+				<div>
+					<img class="rounded-2xl" src="assets/portfolio/enduro.png" />
+					<h3 class="mt-4 text-xl font-bold">Endurosense</h3>
+					<p class="mt-2 text-light leading-7">
+						The smart battery management app. Take control of your energy
+						efficiency with Endurosense.
+					</p>
+					<div class="mt-2 text-lg font-medium" style="color: rgba(0, 0, 0, 0.48)">
+						Private
+					</div>
+				</div>
+				<div>
+					<img class="rounded-2xl" src="assets/portfolio/honorgamingcenter.png" />
+					<h3 class="mt-4 text-xl font-bold">Honor Gaming Center Icon</h3>
+					<p class="mt-2 text-light leading-7">
+						Honor Gaming Center is a software portal that displays real-time
+						performance and settings information for connected devices.
+					</p>
+					<div class="mt-2 text-lg font-medium text-[#00D970]">Public</div>
+				</div>
+				<div>
+					<img class="rounded-2xl" src="assets/portfolio/booking.png" />
+					<h3 class="mt-4 text-xl font-bold">Deskbooking System</h3>
+					<p class="mt-2 text-light leading-7">
+						The Deskbooking Floor Plan provides flexible workspaces, desks,
+						and meeting room solution for your schedule.
+					</p>
+					<div class="mt-2 text-lg font-medium" style="color: rgba(0, 0, 0, 0.48)">
+						Private
+					</div>
+				</div>
+				<div>
+					<img class="rounded-2xl" src="assets/portfolio/foodpanda.png" />
+					<h3 class="mt-4 text-xl font-bold">Foodpanda Web Redesign</h3>
+					<p class="mt-2 text-light leading-7">
+						Trying new style and redsign the icons on foodpanda’s landing
+						page.
+					</p>
+				</div>
+				<div>
+					<img class="rounded-2xl" src="assets/portfolio/pinxer.png" />
+					<h3 class="mt-4 text-xl font-bold">Pinxer Concept</h3>
+					<p class="mt-2 text-light leading-7">
+						Pinxer is a hardware and software integration system.It’s a new
+						ways of interacting with photos.
+					</p>
+				</div>
+				<div>
+					<img class="rounded-2xl" src="assets/portfolio/packcul.png" />
+					<h3 class="mt-4 text-xl font-bold">Parkcul Concept</h3>
+					<p class="mt-2 text-light leading-7">
+						Parkcul is an App that designed for drivers who need to search the
+						parking space.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="relative bg-[url('assets/bottom.png')]">
+		<div class="mx-auto p-16 max-w-[1296px]">
+			<div class="w-full p-8 rounded-2xl" style="
             border: 2px solid;
             border-image-source: linear-gradient(
               112.52deg,
@@ -322,18 +261,16 @@
             );
             box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
             backdrop-filter: blur(12px);
-          "
-        >
-          <div class="flex items-center h-9">
-            <h3 class="mr-5 shrink-0 text-semi-light text-3xl font-medium">
-              My Skills
-            </h3>
-            <div
-              class="grow h-6 bg-[url('assets/icons/slash.svg')] bg-contain bg-repeat-x"
-            ></div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </body>
+          ">
+				<div class="flex items-center h-9">
+					<h3 class="mr-5 shrink-0 text-semi-light text-3xl font-medium">
+						My Skills
+					</h3>
+					<div class="grow h-6 bg-[url('assets/icons/slash.svg')] bg-contain bg-repeat-x"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+
 </html>
