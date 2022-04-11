@@ -580,20 +580,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1.5rem;
 }
 
-.mr-5 {
-  margin-right: 1.25rem;
-}
-
 .mr-6 {
   margin-right: 1.5rem;
 }
 
-.box-border {
-  box-sizing: border-box;
+.mr-5 {
+  margin-right: 1.25rem;
 }
 
-.block {
-  display: block;
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.box-border {
+  box-sizing: border-box;
 }
 
 .inline-block {
@@ -612,6 +612,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: grid;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .h-screen {
   height: 100vh;
 }
@@ -620,12 +624,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 4rem;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-9 {
   height: 2.25rem;
+}
+
+.h-\[44px\] {
+  height: 44px;
 }
 
 .h-24 {
@@ -634,10 +638,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-6 {
   height: 1.5rem;
-}
-
-.h-\[44px\] {
-  height: 44px;
 }
 
 .w-full {
@@ -676,10 +676,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-grow: 1;
 }
 
-.grow-0 {
-  flex-grow: 0;
-}
-
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -702,6 +698,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex-col {
   flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-center {
@@ -732,6 +732,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 24px;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .gap-x-6 {
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
@@ -739,6 +743,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-y-8 {
   row-gap: 2rem;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded-full {
@@ -887,6 +899,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -921,6 +938,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .leading-7 {
   line-height: 1.75rem;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
 }
 
 .text-\[\#00D970\] {
@@ -958,16 +979,6 @@ Ensure the default browser behavior of the `hidden` attribute.
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-html {
-  overflow: hidden;
-  height: 100%;
-}
-
-body {
-  overflow: auto;
-  height: 100%;
-}
-
 .text-light {
   color: rgba(0, 0, 0, 0.72);
 }
@@ -976,12 +987,12 @@ body {
   color: rgba(0, 0, 0, 0.88);
 }
 
-.nav-bg {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.12) 0%,
-    rgba(255, 255, 255, 0.03) 100%
-  );
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+.flag {
+  display: inline-block;
+  margin-x: 8px;
+  font-size: 13px;
+  padding: 4px 8px;
+  color: #00d970;
+  background: #dbffee;
+  border-radius: 4px;
 }
