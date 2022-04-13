@@ -517,8 +517,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: -144px;
 }
 
+.top-\[-41px\] {
+  top: -41px;
+}
+
+.left-1\/2 {
+  left: 50%;
+}
+
 .z-20 {
   z-index: 20;
+}
+
+.z-\[-1\] {
+  z-index: -1;
 }
 
 .col-span-1 {
@@ -632,6 +644,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 0.75rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mr-24 {
+  margin-right: 6rem;
+}
+
+.mr-\[50\%\] {
+  margin-right: 50%;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -722,6 +746,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grow {
   flex-grow: 1;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .grid-cols-2 {
@@ -930,6 +958,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 80px;
 }
 
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.pb-28 {
+  padding-bottom: 7rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1019,6 +1055,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .leading-\[95px\] {
   line-height: 95px;
+}
+
+.leading-\[57px\] {
+  line-height: 57px;
 }
 
 .text-\[\#00D970\] {
