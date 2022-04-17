@@ -493,10 +493,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 25%;
 }
 
-.top-\[-6rem\] {
-  top: -6rem;
-}
-
 .right-\[32px\] {
   right: 32px;
 }
@@ -556,11 +552,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1rem;
 }
 
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
 .ml-auto {
   margin-left: auto;
 }
@@ -581,8 +572,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 2rem;
 }
 
-.mr-10 {
-  margin-right: 2.5rem;
+.mr-6 {
+  margin-right: 1.5rem;
 }
 
 .mt-\[72px\] {
@@ -621,10 +612,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1.5rem;
 }
 
-.mr-6 {
-  margin-right: 1.5rem;
-}
-
 .mr-5 {
   margin-right: 1.25rem;
 }
@@ -633,8 +620,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 0.25rem;
 }
 
-.mt-24 {
-  margin-top: 6rem;
+.mr-1 {
+  margin-right: 0.25rem;
 }
 
 .mr-4 {
@@ -805,6 +792,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 24px;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-x-6 {
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
@@ -969,6 +960,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 80px;
 }
 
+.pt-24 {
+  padding-top: 6rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1104,6 +1099,10 @@ Ensure the default browser behavior of the `hidden` attribute.
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 .text-light {
   color: rgba(0, 0, 0, 0.72);
 }
@@ -1133,4 +1132,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   border-radius: 16px;
+}
+
+.dot:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+}
+
+.dot-active:before {
+  background: #00d970;
+  box-shadow: 0px 0px 8px #00d970;
+  border-radius: 50%;
 }
