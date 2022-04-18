@@ -1205,6 +1205,10 @@ body {
     margin-top: 4rem;
   }
 
+  .md\:mt-12 {
+    margin-top: 3rem;
+  }
+
   .md\:h-\[233px\] {
     height: 233px;
   }
@@ -1229,8 +1233,16 @@ body {
     flex-direction: column;
   }
 
+  .md\:items-center {
+    align-items: center;
+  }
+
   .md\:gap-16 {
     gap: 4rem;
+  }
+
+  .md\:text-center {
+    text-align: center;
   }
 }
 
