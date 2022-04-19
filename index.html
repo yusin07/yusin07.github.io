@@ -87,7 +87,9 @@
           />
         </header>
         <section>
-          <h2 class="ml-20 text-3xl italic font-bold md:mt-16 lg:mt-16 mg:mt-12">
+          <h2
+            class="ml-20 text-3xl italic font-bold md:mt-16 lg:mt-16 mg:mt-12"
+          >
             I'm capable of....
           </h2>
           <ul
@@ -128,6 +130,10 @@
       </div>
     </div>
     <section id="portfolio" class="relative pt-16 bg-white">
+      <img
+        class="absolute w-[100px] h-[100px] top-[-50px] right-[100px]"
+        src="assets/circle.png"
+      />
       <div class="mx-auto p-12 max-w-[1296px]">
         <h2 class="mb-12 font-bold text-5xl text-semi-light">Portfolio</h2>
         <div class="relative mb-6">
@@ -213,11 +219,39 @@
           </div>
         </div>
         <div class="grid grid-cols-12 grid-rows-1 gap-[24px]">
-          <div class="col-span-5">
+          <div class="col-span-5 md:col-span-12">
             <img
               class="rounded-2xl border border-[#EBEBEB]"
               src="assets/portfolio/quire.png"
             />
+            <div
+              class="relative hidden mt-6 h-[459px] rounded-2xl border border-[#EBEBEB] bg-cover bg-[url('assets/portfolio/quirelandingpage.png')] md:block"
+            >
+              <div
+                class="absolute rounded-2xl flex justify-between items-center w-full h-24 bottom-0"
+                style="
+                  background: linear-gradient(
+                    180deg,
+                    #000000 -0.52%,
+                    rgba(0, 0, 0, 0) -0.51%,
+                    rgba(0, 0, 0, 0.5) 100%
+                  );
+                "
+              >
+                <h3
+                  class="ml-8 font-bold text-white text-2xl"
+                  style="text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.24)"
+                >
+                  ZK Component Guide
+                </h3>
+                <a
+                  href="#"
+                  class="mr-8 inline-block mt-2 rounded-lg bg-[#07B856] hover:bg-[#06a74d] active:bg-[#059746] px-6 py-3 text-white font-medium"
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
             <div
               class="grow mt-6 rounded-2xl p-6"
               style="box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08)"
@@ -230,7 +264,7 @@
             </div>
           </div>
           <div
-            class="relative col-span-7 rounded-2xl border border-[#EBEBEB] bg-cover bg-[url('assets/portfolio/quirelandingpage.png')]"
+            class="relative col-span-7 rounded-2xl border border-[#EBEBEB] bg-cover bg-[url('assets/portfolio/quirelandingpage.png')] md:hidden"
           >
             <div
               class="absolute rounded-2xl flex justify-between items-center w-full h-24 bottom-0"
@@ -269,7 +303,9 @@
           </span>
           <hr class="grow" />
         </div>
-        <div class="grid grid-cols-3 grid-rows-2 gap-x-6 gap-y-8">
+        <div
+          class="grid grid-cols-3 grid-rows-2 gap-x-6 gap-y-8 md:grid-cols-1 md:grid-rows-6"
+        >
           <div>
             <img
               class="rounded-2xl border border-[#EBEBEB]"
@@ -281,9 +317,10 @@
               efficiency with Endurosense.
             </p>
             <div
-              class="mt-2 mb-6 text-lg font-medium"
+              class="flex items-center mt-2 mb-6 text-lg font-medium"
               style="color: rgba(0, 0, 0, 0.48)"
             >
+              <img class="inline-block mr-2" src="assets/icons/eye-off.svg" />
               Private
             </div>
           </div>
@@ -298,7 +335,8 @@
               performance and settings information for connected devices.
             </p>
             <div class="mt-2 mb-6 text-lg font-medium text-[#00D970]">
-              Public
+              <img class="inline-block mr-2" src="assets/icons/eye.svg" />
+              <a>Learn more</a>
             </div>
           </div>
           <div>
@@ -312,9 +350,10 @@
               and meeting room solution for your schedule.
             </p>
             <div
-              class="mt-2 mb-6 text-lg font-medium"
+              class="flex items-center mt-2 mb-6 text-lg font-medium"
               style="color: rgba(0, 0, 0, 0.48)"
             >
+              <img class="inline-block mr-2" src="assets/icons/eye-off.svg" />
               Private
             </div>
           </div>
@@ -365,7 +404,9 @@
               class="grow h-6 bg-[url('assets/icons/slash.svg')] bg-contain bg-repeat-x"
             ></div>
           </div>
-          <div class="mt-8 grid grid-cols-2 grid-rows-2 gap-6">
+          <div
+            class="mt-8 grid grid-cols-2 grid-rows-2 gap-6 md:grid-cols-1 md:grid-rows-4"
+          >
             <div class="mx-4 flex items-start">
               <img class="mr-6" src="assets/ability/figma.svg" />
               <div>
@@ -431,10 +472,10 @@
           </div>
         </div>
         <div id="experience" class="relative pt-24">
-          <img class="absolute w-1/2 left-1/4 top-0" src="assets/line.png" />
+          <img class="absolute w-1/2 mh left-1/4 top-0" src="assets/line.png" />
           <h2 class="mb-12 font-bold text-5xl text-semi-light">Experience</h2>
           <div class="flex flex-col items-center">
-            <div class="relative self-end w-[calc(50%-40px)]">
+            <div class="relative self-end w-[calc(50%-40px)] md:w-full">
               <div
                 class="absolute right-[32px] leading-[95px] font-semibold top-[-63px] text-[80px]"
               >
@@ -466,7 +507,9 @@
                 </a>
               </div>
             </div>
-            <div class="relative self-start w-[calc(50%-40px)] top-[-48px]">
+            <div
+              class="relative self-start w-[calc(50%-40px)] top-[-48px] md:w-full md:mt-[95px] md:top-0"
+            >
               <div
                 class="absolute right-[32px] leading-[95px] font-semibold top-[-63px] text-[80px]"
               >
@@ -497,7 +540,9 @@
                 </p>
               </div>
             </div>
-            <div class="relative self-end w-[calc(50%-40px)] top-[-96px]">
+            <div
+              class="relative self-end w-[calc(50%-40px)] top-[-96px] md:w-full md:top-0 md:mt-[95px]"
+            >
               <div
                 class="absolute right-[32px] leading-[95px] font-semibold top-[-63px] text-[80px]"
               >
@@ -528,7 +573,9 @@
                 </p>
               </div>
             </div>
-            <div class="relative self-start w-[calc(50%-40px)] top-[-144px]">
+            <div
+              class="relative self-start w-[calc(50%-40px)] top-[-144px] md:w-full md:mt-[95px] md:top-0"
+            >
               <div
                 class="absolute right-[32px] leading-[95px] font-semibold top-[-63px] text-[80px]"
               >
@@ -558,7 +605,7 @@
                 </p>
               </div>
             </div>
-            <div id="contact" class="relative">
+            <div id="contact" class="relative md:w-full md:mt-[95px] md:top-0">
               <div
                 style="transform: translate(-50%, 0)"
                 class="left-1/2 mr-[50%] absolute leading-[57px] font-bold top-[-41px] text-5xl"

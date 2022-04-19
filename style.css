@@ -485,6 +485,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 0px;
 }
 
+.top-\[-50px\] {
+  top: -50px;
+}
+
+.right-\[100px\] {
+  right: 100px;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -660,6 +668,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-full {
   height: 100%;
 }
@@ -680,8 +692,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 44px;
 }
 
+.h-\[100px\] {
+  height: 100px;
+}
+
 .h-24 {
   height: 6rem;
+}
+
+.h-\[459px\] {
+  height: 459px;
 }
 
 .h-6 {
@@ -698,6 +718,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-80 {
   width: 20rem;
+}
+
+.w-\[100px\] {
+  width: 100px;
 }
 
 .w-1\/2 {
@@ -1113,7 +1137,7 @@ body {
 
 .flag {
   display: inline-block;
-  margin-x: 8px;
+  margin: 4px;
   font-size: 13px;
   padding: 4px 8px;
   color: #00d970;
@@ -1146,6 +1170,10 @@ body {
   background: #00d970;
   box-shadow: 0px 0px 8px #00d970;
   border-radius: 50%;
+}
+
+.mh {
+  height: calc(100% + 112px);
 }
 
 .hover\:bg-\[\#00c365\]:hover {
@@ -1189,28 +1217,36 @@ body {
 }
 
 @media (min-width: 360px) and (max-width: 768px) {
-  .md\:relative {
-    position: relative;
-  }
-
-  .md\:col-span-12 {
-    grid-column: span 12 / span 12;
+  .md\:top-0 {
+    top: 0px;
   }
 
   .md\:col-span-1 {
     grid-column: span 1 / span 1;
   }
 
-  .md\:mt-16 {
-    margin-top: 4rem;
+  .md\:col-span-12 {
+    grid-column: span 12 / span 12;
   }
 
   .md\:mt-12 {
     margin-top: 3rem;
   }
 
-  .md\:h-\[233px\] {
-    height: 233px;
+  .md\:mt-16 {
+    margin-top: 4rem;
+  }
+
+  .md\:mt-\[95px\] {
+    margin-top: 95px;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:h-\[363px\] {
@@ -1221,12 +1257,20 @@ body {
     width: 75%;
   }
 
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .md\:w-full {
+    width: 100%;
   }
 
   .md\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .md\:grid-rows-6 {
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+  }
+
+  .md\:grid-rows-4 {
+    grid-template-rows: repeat(4, minmax(0, 1fr));
   }
 
   .md\:flex-col {

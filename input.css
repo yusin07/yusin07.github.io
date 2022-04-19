@@ -16,7 +16,7 @@ body {
 
 .flag {
   display: inline-block;
-  margin-x: 8px;
+  margin: 4px;
   font-size: 13px;
   padding: 4px 8px;
   color: #00d970;
@@ -48,4 +48,8 @@ body {
   background: #00d970;
   box-shadow: 0px 0px 8px #00d970;
   border-radius: 50%;
+}
+
+.mh {
+  height: calc(100% + 112px);
 }
