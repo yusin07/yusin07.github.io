@@ -202,12 +202,52 @@
             </div>
           </div>
           <div class="flex flex-col lg:col-span-5 md:col-span-1">
-            <img class="rounded-lg" src="assets/banner/Banner1.png" />
+            <div>
+              <img class="rounded-lg slide" src="assets/banner/Banner1.png" />
+              <img
+                class="rounded-lg slide display-none"
+                src="assets/banner/Banner2.png"
+              />
+              <img
+                class="rounded-lg slide display-none"
+                src="assets/banner/Banner3.png"
+              />
+              <img
+                class="rounded-lg slide display-none"
+                src="assets/banner/Banner4.png"
+              />
+              <img
+                class="rounded-lg slide display-none"
+                src="assets/banner/Banner5.png"
+              />
+              <img
+                class="rounded-lg slide display-none"
+                src="assets/banner/Banner6.png"
+              />
+            </div>
             <div class="my-4 flex justify-center items-center">
               <hr class="grow" />
               <span class="mx-4 font-medium" style="color: rgba(0, 0, 0, 0.48)">
                 ZK Banners
               </span>
+              <span
+                class="slide-dot slide-active w-2 h-2 rounded bg-[#EBEBEB] mx-2"
+              ></span>
+              <span
+                class="slide-dot w-2 h-2 rounded bg-[#EBEBEB] mx-2 cursor-pointer"
+              ></span>
+              <span
+                class="slide-dot w-2 h-2 rounded bg-[#EBEBEB] mx-2 cursor-pointer"
+              ></span>
+              <span
+                class="slide-dot w-2 h-2 rounded bg-[#EBEBEB] mx-2 cursor-pointer"
+              ></span>
+              <span
+                class="slide-dot w-2 h-2 rounded bg-[#EBEBEB] mx-2 cursor-pointer"
+              ></span>
+              <span
+                class="slide-dot w-2 h-2 rounded bg-[#EBEBEB] mx-2 cursor-pointer"
+              ></span>
               <hr class="grow" />
             </div>
             <div
@@ -694,5 +734,46 @@
       }
     }
     document.body.addEventListener("scroll", scroll);
+
+    // create slide show in banner image
+    let slideIndex = 0;
+    let slides = document.getElementsByClassName("slide");
+    let dots = document.getElementsByClassName("slide-dot");
+    showSlides();
+    let interval = setInterval(showSlides, 5000);
+    clickDot();
+
+    function showSlides() {
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace("slide-active", " ");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " slide-active";
+    }
+
+    function clickDot() {
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].addEventListener("click", function () {
+          clearInterval(interval);
+          for (let i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace("slide-active", " ");
+          }
+          dots[i].className += " slide-active";
+          slideIndex = i;
+          for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slides[slideIndex].style.display = "block";
+          interval = setInterval(showSlides, 5000);
+        });
+      }
+    }
   </script>
 </html>

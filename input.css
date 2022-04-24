@@ -63,3 +63,7 @@ body {
     height: calc(100% + 90px);
   }
 }
+
+.slide-active {
+  background: #00a2cf;
+}
