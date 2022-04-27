@@ -30,7 +30,7 @@
       "
     >
       <div
-        class="flex justify-around items-center ml-auto mr-auto w-full h-full max-w-[1200px] px-2"
+        class="flex justify-around items-center ml-auto mr-auto w-full h-full max-w-[1200px]"
       >
         <img
           alt="logo"
@@ -166,7 +166,7 @@
             </a>
           </div>
           <img
-            class="rounded-2xl border border-[#EBEBEB] md:h-[234px] md:object-cover"
+            class="rounded-2xl border border-[#EBEBEB] md:h-[371px] md:object-cover"
             height="480px"
             src="assets/portfolio/zkframework.png"
           />
@@ -666,8 +666,10 @@
               >
                 Contact
               </div>
-              <div class="relative flex justify-between glass p-8">
-                <div class="mr-24 shrink md:mr-0">
+              <div
+                class="relative flex flex-wrap justify-between glass p-8 gap-[12px]"
+              >
+                <div class="shrink-0 mr-24 md:mr-0">
                   <div class="text-light text-xl font-semibold">
                     Hsu, Yu Sin (許煜欣)
                   </div>
@@ -683,7 +685,7 @@
                     >
                   </div>
                 </div>
-                <div class="flex items-center gap-2">
+                <div class="flex shrink-0 items-center gap-2">
                   <a href="https://www.linkedin.com/in/yusin-hsu/"
                     ><img class="inline-block" src="assets/icons/linkedin.svg"
                   /></a>
@@ -715,8 +717,6 @@
     const experienceLi = document.getElementById("experience-li");
     const contactLi = document.getElementById("contact-li");
     function scroll() {
-      console.log(window.screen.height);
-      console.log(contact.getBoundingClientRect().top);
       if (window.screen.height > contact.getBoundingClientRect().bottom) {
         portfolioLi.classList.remove("dot-active");
         experienceLi.classList.remove("dot-active");

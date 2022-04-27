@@ -824,6 +824,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .flex-nowrap {
   flex-wrap: nowrap;
 }
@@ -858,6 +862,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-\[12px\] {
+  gap: 12px;
 }
 
 .gap-x-6 {
@@ -1346,6 +1354,10 @@ body {
 
   .md\:h-\[363px\] {
     height: 363px;
+  }
+
+  .md\:h-\[371px\] {
+    height: 371px;
   }
 
   .md\:w-full {
