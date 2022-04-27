@@ -993,6 +993,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1.5rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -1225,7 +1230,7 @@ body {
   display: inline-block;
   width: 10px;
   height: 10px;
-  margin-right: 8px;
+  margin: 0 8px;
 }
 
 .dot-active:before {
