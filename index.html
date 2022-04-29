@@ -77,6 +77,7 @@
             </p>
             <div class="mt-12">
               <a
+                target="_blank"
                 href="https://drive.google.com/file/d/1rg_lIzwuvBXTI9k5YQU9zqekTLv4L5IG/view"
                 class="inline-flex mr-2 items-center box-border rounded-lg bg-[#00D970] hover:bg-[#00c365] active:bg-[#00ae5a] h-[44px] px-6 text-white font-medium"
               >
@@ -158,12 +159,12 @@
               After ten years of use, the website is no longer in line with
               modern trends and it is time for a renovation.
             </p>
-            <a
-              href="#"
+            <span
+              id="zkredesign-learn-more"
               class="inline-block mt-2 rounded-lg bg-[#00D970] hover:bg-[#00c365] active:bg-[#00ae5a] px-6 py-3 text-white font-medium"
             >
               Learn More
-            </a>
+            </span>
           </div>
           <img
             class="rounded-2xl border border-[#EBEBEB] md:h-[371px] md:object-cover"
@@ -193,12 +194,12 @@
               >
                 ZK Component Guide
               </h3>
-              <a
-                href="#"
-                class="shrink-0 mr-8 inline-block mt-2 rounded-lg bg-[#FFA516] hover:bg-[#e59414] active:bg-[#cc8412] px-6 py-3 text-white font-medium"
+              <span
+                id="zkcomponent-learn-more"
+                class="shrink-0 mr-8 inline-block mt-2 rounded-lg bg-[#FFA516] hover:bg-[#e59414] active:bg-[#cc8412] px-6 py-3 text-white font-medium cursor-pointer"
               >
                 Learn More
-              </a>
+              </span>
             </div>
           </div>
           <div class="flex flex-col lg:col-span-5 md:col-span-1">
@@ -227,7 +228,11 @@
             </div>
             <div class="my-4 flex justify-center items-center">
               <hr class="grow" />
-              <span class="mx-4 font-medium" style="color: rgba(0, 0, 0, 0.48)">
+              <img
+                class="ml-2 inline-block mr-1"
+                src="assets/icons/arrow-up.svg"
+              />
+              <span class="mr-4 font-medium" style="color: rgba(0, 0, 0, 0.48)">
                 ZK Banners
               </span>
               <span
@@ -291,12 +296,12 @@
                 >
                   Quire Landing Page
                 </h3>
-                <a
-                  href="#"
+                <span
+                  id="quire-learn-more-2"
                   class="shrink-0 mr-8 inline-block mt-2 rounded-lg bg-[#07B856] hover:bg-[#06a74d] active:bg-[#059746] px-6 py-3 text-white font-medium"
                 >
                   Learn More
-                </a>
+                </span>
               </div>
             </div>
             <div
@@ -330,12 +335,12 @@
               >
                 Quire Landing Page
               </h3>
-              <a
-                href="#"
+              <span
+                id="quire-learn-more"
                 class="shrink-0 mr-8 inline-block mt-2 rounded-lg bg-[#07B856] hover:bg-[#06a74d] active:bg-[#059746] px-6 py-3 text-white font-medium"
               >
                 Learn More
-              </a>
+              </span>
             </div>
           </div>
         </div>
@@ -382,10 +387,11 @@
               performance and settings information for connected devices.
             </p>
             <div
-              class="mt-2 mb-6 text-lg font-medium text-[#00D970] hover:text-[#00c666] active:text-[#00b35b]"
+              class="flex items-center mt-2 mb-6 text-lg font-medium"
+              style="color: rgba(0, 0, 0, 0.48)"
             >
-              <img class="inline-block mr-2" src="assets/icons/eye.svg" />
-              <a href="#">Learn more</a>
+              <img class="inline-block mr-2" src="assets/icons/eye-off.svg" />
+              Private
             </div>
           </div>
           <div>
@@ -708,6 +714,87 @@
     >
       © Design by Yu Sin, 2022
     </section>
+    <-- model popup that only appear when clicking Learn More button-->
+    <div
+      class="hidden overflow-scroll popup fixed top-0 left-0 w-full h-full z-50"
+      id="modal-zk"
+    >
+      <img
+        id="zk-x"
+        class="fixed h-[42px] w-[42px] top-[40px] right-[98px] text-[50px] text-white cursor-pointer"
+        src="assets/icons/x.png"
+      />
+      <div class="px-12 pb-12 w-full">
+        <div
+          class="flex flex-row-reverse mr-[120px] items-center font-medium text-[32px] text-white h-[120px]"
+        >
+          Click here to close
+        </div>
+        <img class="w-full" src="./assets/zkcomponent/1_Landing.png" />
+        <img class="w-full" src="./assets/zkcomponent/2_Colors.png" />
+        <img class="w-full" src="./assets/zkcomponent/3_Typography.png" />
+        <img class="w-full" src="./assets/zkcomponent/4_Icons.png" />
+        <img class="w-full" src="./assets/zkcomponent/5_Surfaces.png" />
+        <img class="w-full" src="./assets/zkcomponent/6_Components.png" />
+      </div>
+    </div>
+    <div
+      class="hidden overflow-scroll popup fixed top-0 left-0 w-full h-full z-50"
+      id="modal-redesign"
+    >
+      <img
+        id="redesign-x"
+        class="fixed h-[42px] w-[42px] top-[40px] right-[98px] text-[50px] text-white cursor-pointer"
+        src="assets/icons/x.png"
+      />
+      <div class="px-12 pb-12 w-full">
+        <div
+          class="flex flex-row-reverse mr-[120px] items-center font-medium text-[32px] text-white h-[120px]"
+        >
+          Click here to close
+        </div>
+        <img class="w-full" src="./assets/zkredesign/1_Landing.png" />
+        <img class="w-full" src="./assets/zkredesign/2_Overview.png" />
+        <img class="w-full" src="./assets/zkredesign/3_Propoual.png" />
+        <img class="w-full" src="./assets/zkredesign/4_Sitemap.png" />
+        <img class="w-full" src="./assets/zkredesign/5_Colors.png	" />
+        <img class="w-full" src="./assets/zkredesign/6_Typography.png" />
+        <img class="w-full" src="./assets/zkredesign/7_Component.png" />
+        <img class="w-full" src="./assets/zkredesign/8_Icons.png" />
+        <img class="w-full" src="./assets/zkredesign/9_Illustrations.png" />
+        <img class="w-full" src="./assets/zkredesign/10_Banner.png" />
+        <img class="w-full" src="./assets/zkredesign/11_Landing Page.png" />
+        <img class="w-full" src="./assets/zkredesign/12_Product Page.png" />
+        <img class="w-full" src="./assets/zkredesign/13_Documentation.png" />
+        <img class="w-full" src="./assets/zkredesign/14_Download.png" />
+        <img class="w-full" src="./assets/zkredesign/15_Pricing.png" />
+        <img class="w-full" src="./assets/zkredesign/16_Training.png" />
+      </div>
+    </div>
+    <div
+      class="hidden overflow-scroll popup fixed top-0 left-0 w-full h-full z-50"
+      id="modal-quire"
+    >
+      <img
+        id="quire-x"
+        class="fixed h-[42px] w-[42px] top-[40px] right-[98px] text-[50px] text-white cursor-pointer"
+        src="assets/icons/x.png"
+      />
+      <div class="px-12 pb-12 w-full">
+        <div
+          class="flex flex-row-reverse mr-[120px] items-center font-medium text-[32px] text-white h-[120px]"
+        >
+          Click here to close
+        </div>
+        <img class="w-full" src="./assets/quire/1_Landingpage.png" />
+        <img class="w-full" src="./assets/quire/2_Request.png" />
+        <img class="w-full" src="./assets/quire/3_Overview.png" />
+        <img class="w-full" src="./assets/quire/4_Wireframe.png" />
+        <img class="w-full" src="./assets/quire/5_Visual Dseign.png" />
+        <img class="w-full" src="./assets/quire/6_Element.gif" />
+        <img class="w-full" src="./assets/quire/7_Web Design.png" />
+      </div>
+    </div>
   </body>
   <script>
     const portfolio = document.getElementById("portfolio");
@@ -775,5 +862,29 @@
         });
       }
     }
+
+    const modal = document.getElementById("modal-zk");
+    const learnMore = document.getElementById("zkcomponent-learn-more");
+    const close = document.getElementById("zk-x");
+    learnMore.addEventListener("click", function () {
+      modal.style.display = "block";
+    });
+    close.addEventListener("click", function () {
+      modal.style.display = "none";
+    });
+
+    const qmodal = document.getElementById("modal-quire");
+    const qlearnMore = document.getElementById("quire-learn-more");
+    const q2learnMore = document.getElementById("quire-learn-more-2");
+    const qclose = document.getElementById("quire-x");
+    q2learnMore.addEventListener("click", function () {
+      qmodal.style.display = "block";
+    });
+    qlearnMore.addEventListener("click", function () {
+      qmodal.style.display = "block";
+    });
+    qclose.addEventListener("click", function () {
+      qmodal.style.display = "none";
+    });
   </script>
 </html>
