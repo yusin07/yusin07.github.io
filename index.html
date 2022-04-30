@@ -4,6 +4,8 @@
     <title>Portfolio - Yu Sin</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Portfolio - Yu Sin" />
+    <meta property="og:image" content="assets/og.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -714,19 +716,18 @@
     >
       © Design by Yu Sin, 2022
     </section>
-    <-- model popup that only appear when clicking Learn More button-->
     <div
-      class="hidden overflow-scroll popup fixed top-0 left-0 w-full h-full z-50"
+      class="fixed hidden overflow-scroll popup top-0 left-0 w-full h-full z-50"
       id="modal-zk"
     >
-      <img
-        id="zk-x"
-        class="fixed h-[42px] w-[42px] top-[40px] right-[98px] text-[50px] text-white cursor-pointer"
-        src="assets/icons/x.png"
-      />
-      <div class="px-12 pb-12 w-full">
+      <div class="relative px-12 pb-12 w-full max-w-[1400px] mx-auto">
+        <img
+          id="zk-x"
+          class="sticky ml-auto h-[42px] w-[42px] top-[46px] right-[48px] text-[50px] text-white cursor-pointer"
+          src="assets/icons/x.png"
+        />
         <div
-          class="flex flex-row-reverse mr-[120px] items-center font-medium text-[32px] text-white h-[120px]"
+          class="flex flex-row-reverse mr-[40px] font-medium text-[32px] text-white h-[80px]"
         >
           Click here to close
         </div>
@@ -738,18 +739,19 @@
         <img class="w-full" src="./assets/zkcomponent/6_Components.png" />
       </div>
     </div>
+
     <div
-      class="hidden overflow-scroll popup fixed top-0 left-0 w-full h-full z-50"
+      class="fixed hidden overflow-scroll popup fixed top-0 left-0 w-full h-full z-50"
       id="modal-redesign"
     >
-      <img
-        id="redesign-x"
-        class="fixed h-[42px] w-[42px] top-[40px] right-[98px] text-[50px] text-white cursor-pointer"
-        src="assets/icons/x.png"
-      />
-      <div class="px-12 pb-12 w-full">
+      <div class="relative px-12 pb-12 w-full max-w-[1400px] mx-auto">
+        <img
+          id="redesign-x"
+          class="sticky ml-auto h-[42px] w-[42px] top-[46px] right-[48px] text-[50px] text-white cursor-pointer"
+          src="assets/icons/x.png"
+        />
         <div
-          class="flex flex-row-reverse mr-[120px] items-center font-medium text-[32px] text-white h-[120px]"
+          class="flex flex-row-reverse mr-[40px] font-medium text-[32px] text-white h-[80px]"
         >
           Click here to close
         </div>
@@ -775,14 +777,14 @@
       class="hidden overflow-scroll popup fixed top-0 left-0 w-full h-full z-50"
       id="modal-quire"
     >
-      <img
-        id="quire-x"
-        class="fixed h-[42px] w-[42px] top-[40px] right-[98px] text-[50px] text-white cursor-pointer"
-        src="assets/icons/x.png"
-      />
-      <div class="px-12 pb-12 w-full">
+      <div class="relative px-12 pb-12 w-full max-w-[1400px] mx-auto">
+        <img
+          id="quire-x"
+          class="sticky ml-auto h-[42px] w-[42px] top-[46px] right-[48px] text-[50px] text-white cursor-pointer"
+          src="assets/icons/x.png"
+        />
         <div
-          class="flex flex-row-reverse mr-[120px] items-center font-medium text-[32px] text-white h-[120px]"
+          class="flex flex-row-reverse mr-[40px] font-medium text-[32px] text-white h-[80px]"
         >
           Click here to close
         </div>
@@ -862,6 +864,16 @@
         });
       }
     }
+
+    const rmodal = document.getElementById("modal-redesign");
+    const rlearnMore = document.getElementById("zkredesign-learn-more");
+    const rclose = document.getElementById("redesign-x");
+    rlearnMore.addEventListener("click", function () {
+      rmodal.style.display = "block";
+    });
+    rclose.addEventListener("click", function () {
+      rmodal.style.display = "none";
+    });
 
     const modal = document.getElementById("modal-zk");
     const learnMore = document.getElementById("zkcomponent-learn-more");
