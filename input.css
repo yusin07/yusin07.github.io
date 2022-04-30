@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
 body {
   scroll-behavior: smooth;
 }
