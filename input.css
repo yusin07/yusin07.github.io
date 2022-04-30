@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  -ms-overflow-style: none;
+  
 }
 
 body {
@@ -74,4 +74,8 @@ body {
 
 .popup {
   background: rgba(0, 0, 0, 0.72);
+}
+
+.hide-scroll {
+	scrollbar-width: none;
 }
