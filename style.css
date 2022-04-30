@@ -1233,7 +1233,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 html {
-  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -ms-overflow-style: none;
 }
 
 body {

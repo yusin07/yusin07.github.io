@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -ms-overflow-style: none;
 }
 
 body {
